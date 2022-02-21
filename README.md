@@ -6,8 +6,8 @@ Responsive Landing pages using Boostrap/Tailwind.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/nitinduseja/landing-pages/screenshots/bootstrap5-landing-1.png)
-![App Screenshot](https://github.com/nitinduseja/landing-pages/screenshots/tailwind2-landing-1.png)
+![App Screenshot](https://github.com/nitinduseja/landing-pages/blob/main/screenshots/bootstrap5-landing-1.png)
+![App Screenshot](https://github.com/nitinduseja/landing-pages/blob/main/screenshots/tailwind2-landing-1.png)
 
 ## Run Locally
 
