@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4442/4442692.png" type="image/x-icon" />
+    <style>
+        /* USAGE -> The caption text will be displayed on mouseover.
+        Please use a unique caption text for each image ID    
+        */
+
+        .wall_img_1 {
+            width: 100%;
+            height: 600px;
+            margin: 40px auto;
+            transition: all .2s ease-in-out;
+        }
+
+        .wall_img_2 {
+            width: 100%;
+            height: 400px;
+            margin: 20px auto;
+            transition: all .2s ease-in-out;
+        }
+
+        .wall_img_1:hover,
+        .wall_img_2:hover {
+            filter: grayscale(80%)
+        }
+
+        .wall_img_1:before,
+        .wall_img_2:before {
+            content: attr(id);
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            text-align: center;
+            display: block;
+            font-size: 22px;
+            color: #fff;
+            mix-blend-mode: overlay;
+        }
+
+        .wall_img_1:hover::before,
+        .wall_img_2:hover::before {
+            content: attr(id);
+            opacity: 1;
+        }
+    </style>
+    <title>Landing</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 py-3">
+        <div class="container-xl">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50/000000/FFFFFF" class="h-8" alt="...">
+            </a>
+            <!-- Navbar toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Nav -->
+                <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
+                    <a class="nav-item nav-link" href="#">Product</a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                </div>
+                <!-- Right navigation -->
+                <div class="navbar-nav ms-lg-4">
+                    <a class="nav-item nav-link" href="#">Sign in</a>
+                </div>
+                <!-- Action -->
+                <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="position-relative overflow-hidden">
+        <div class="d-flex min-vh-100" lc-helper="video-bg">
+            <video style="z-index:1;object-fit: cover; object-position: 50% 50%;"
+                class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+                <!-- adjust object-position to tweak cropping on mobile -->
+                <source src="https://cdn.livecanvas.com/media/nature/video.mp4" type="video/mp4">
+            </video>
+            <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+                <div class="lc-block mb-4">
+                    <div editable="rich">
+                        <h1 class="display-1 fw-bolder">With Love and Respect</h1>
+                    </div>
+                </div>
+
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus
+                            porttitor dui.</p>
+
+                        <p class="lead">Sim in vestibulum metus pulvinar sit amet.
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="lc-block">
+                    <svg onclick="this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });"
+                        width="4em" height="4em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg" style="">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        <path fill-rule="evenodd"
+                            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z">
+                        </path>
+                    </svg>
+
+                    <!-- for Safari support only, remove if you want  -->
+                    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature -->
+    <div class="min-vh-100 d-flex">
+        <div class="container align-self-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="lc-block py-5">
+                        <div editable="rich">
+
+                            <h5><strong>&gt; THIS IS MY FEATURE 1</strong></h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+                        </div>
+                    </div><!-- /lc-block -->
+
+                    <div class="lc-block py-5">
+                        <div editable="rich">
+
+                            <h5><strong>&gt; THIS IS MY FEATURE 2</strong></h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+                        </div>
+                    </div><!-- /lc-block -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-center ">
+
+                    <div class="lc-block mb-2" style="width:100%">
+                        <img alt="" class="img-fluid"
+                            src="https://cdn.livecanvas.com/media/svg/drawkit/holding-phone-colour.svg">
+                    </div>
+
+
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                    <div class="lc-block py-5">
+                        <div editable="rich">
+
+                            <h5><strong>&gt; THIS IS MY FEATURE 3</strong></h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+                        </div>
+                    </div><!-- /lc-block -->
+
+                    <div class="lc-block py-5">
+                        <div editable="rich">
+
+                            <h5><strong>&gt; THIS IS MY FEATURE 4</strong></h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+                        </div>
+                    </div><!-- /lc-block -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container-fluid position-relative overflow-hidden">
+        <div class="row ">
+            <div class="col-md-8 offset-md-2">
+                <div class="lc-block text-center">
+                    <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+                    <h2 editable="inline" class="display-2 mb-0"><b>Gallery</b></h2>
+                    <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus <br> id
+                        ligula malesuada placerat sit amet quis enim.</p>
+                </div><!-- /lc-block -->
+            </div><!-- /col -->
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="lc-block">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1518965377251-de929fb61f2b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80');"
+                                id="The Photo Title">
+                            </div>
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1532932371123-928bc0091ec0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=635&amp;q=80');"
+                                id="landscape 2">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1564661392417-bb629e9c6519?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1002&amp;q=80');"
+                                id="My title goes here">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1500703067148-d33a221a8603?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');"
+                                id="This is my landscape">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1462678522506-09a896e3d33f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');"
+                                id="landscape 3">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                </div>
+                <!-- /lc-block -->
+            </div><!-- /col -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="lc-block">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1545221858-0c888a4f9058?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80');"
+                                id="My photo">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1569764760476-5e1f2eb09c42?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80');"
+                                id="landscape 5">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1566380351847-6703d9e86886?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');"
+                                id="landscape 8">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1436377991866-f9af228d2b47?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');"
+                                id="landscape 11">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1560390984-5b636c4cb1de?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=792&amp;q=80');"
+                                id="landscape 10">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                </div>
+                <!-- /lc-block -->
+            </div><!-- /col -->
+
+        </div><!-- /col -->
+    </div>
+
+    <!-- Teams -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 text-center">
+                <div class="lc-block mb-5"><span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+                    <h2 editable="inline" class="display-2 mb-0"><b>Team</b></h2>
+                    <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id<br>
+                        ligula malesuada placerat sit amet quis enim.</p>
+                </div><!-- /lc-block -->
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4 mb-5 mb-md-0">
+
+                <img class="w-50 img-fluid mb-3 shadow "
+                    src="https://images.unsplash.com/photo-1509112552557-8eb3dab85cfc?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9"
+                    alt="Photo by R A" loading="lazy">
+                <h3 editable="inline">Mr. Name S.</h3>
+                <p editable="inline" class="fw-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+
+                <img class="w-50 img-fluid  mb-3 shadow "
+                    src="https://images.unsplash.com/photo-1512663150964-d8f43c899f76?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9"
+                    alt="Photo by SHTTEFAN" loading="lazy">
+                <h3 editable="inline">Mr. Name S.</h3>
+                <p editable="inline" class="fw-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+
+                <img class="w-50 img-fluid  mb-3 shadow "
+                    src="https://images.unsplash.com/photo-1495147334217-fcb3445babd5?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9"
+                    alt="Photo by Ryan Holloway" loading="lazy">
+                <h3 editable="inline">Mr. Name S.</h3>
+                <p editable="inline" class="fw-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="container py-5 overflow-hidden">
+        <div class="row mb-5 pb-2">
+            <div class="col-md-12 text-center">
+                <div class="lc-block mb-4">
+                    <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+                    <h2 editable="inline" class="display-2 mb-0"><b>Pricing</b></h2>
+                    <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
+                        <br> ligula malesuada placerat sit amet quis enim.
+                    </p>
+                </div>
+                <!-- /lc-block -->
+            </div>
+        </div>
+        <div class="row justify-content-center pt-2 pb-4">
+            <div class="col-12 col-lg-4">
+                <div class="lc-block text-center rounded border shadow-sm py-5 mb-5">
+                    <div class="lc-block text-center">
+                        <img src="https://cdn.livecanvas.com/media/svg/undraw-sample/undraw_steps_ngvm.svg"
+                            alt="Designer" style="" loading="lazy" class="w-50 mb-2">
+                    </div>
+                    <div class="lc-block text-center">
+                        <div editable="rich">
+                            <h2>Personal</h2>
+                        </div>
+                    </div>
+                    <div class="lc-block text-center small">
+                        <div editable="rich">
+                            <p>Perfect for
+                                <strong>designers</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lc-block text-center text-info display-4">
+                        <p>
+                            <span editable="inline"><b>$79</b></span>
+                            <span class="lead" editable="inline">/ per year</span>
+                        </p>
+                    </div>
+                    <div class="lc-block">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Build Unlimited Websites</span>
+                            </li>
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Updates for 1 Year</span>
+                            </li>
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Support for 1 Year</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lc-block" style="z-index:4">
+                        <a class="btn btn-outline-primary" href="#" role="button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Price Plan Area -->
+            <div class="col-12 col-lg-4" style="z-index: 5;">
+                <div class="lc-block text-center mb-5 py-5 shadow bg-white shadow-lg text-dark"
+                    style="border-radius: 12px;z-index: 2;transform: scale(1.2);">
+                    <div class="lc-block text-center">
+                        <img src="https://cdn.livecanvas.com/media/svg/undraw-sample/undraw_video_influencer_9oyy.svg"
+                            alt="Designer" style="" loading="lazy" class="w-50 mb-2">
+                    </div>
+                    <div class="lc-block text-center">
+                        <div editable="rich">
+                            <h2>Business</h2>
+                        </div>
+                    </div>
+                    <div class="lc-block text-center small">
+                        <div editable="rich">
+                            <p>Perfect for
+                                <strong>agency</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lc-block text-center text-info display-4">
+                        <p>
+                            <span editable="inline"><b>$199</b></span>
+                            <span class="lead" editable="inline">/ per year</span>
+                        </p>
+                    </div>
+                    <div class="lc-block">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Build Unlimited Websites</span>
+                            </li>
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Updates for 1 Year</span>
+                            </li>
+                            <li class="py-2">
+                                <svg viewBox="0 0 16 16" class="text-success" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" width="2em" height="2em">
+                                    <path fill-rule="evenodd"
+                                        d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                    </path>
+                                </svg>
+                                <span editable="inline">Support for 1 Year</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lc-block" style="z-index:4">
+                        <a class="btn btn-outline-primary" href="#" role="button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <div class="lc-block mb-4">
+                    <h2 editable="inline" class="rfs-25 fw-bolder">Testimonials</h2>
+                    <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id<br>
+                        ligula malesuada placerat sit amet quis enim.</p>
+                </div><!-- /lc-block -->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Nicolas Horn" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">Mathew Glock</h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Leio McLaren" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">Tahmid William&nbsp;<p></p>
+                                    <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
+                                    malesuada placerat sit amet quis enim. Aliquam erat volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Amir Seilsepour" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">Jarvis Ridley&nbsp;<p></p>
+                                    <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Imansyah Muhamad Putera" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">Bronwen Baxter&nbsp;<p></p>
+                                    <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Conor OBrien" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">
+                                    Nadir Chandler
+
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
+                                    malesuada placerat sit amet quis enim. Aliquam erat volutpat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-4">
+                        <div class="d-flex">
+                            <img style="width:48px;height:48px"
+                                src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
+                                alt="Photo by Daniil Lobachev" class="rounded-2 shadow"
+                                srcset="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                            <div class="ps-2">
+                                <h4 editable="inline" class="rfs-7 ms-2">
+                                    Samira Goldsmith
+
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="lc-block mt-4 text-muted">
+                            <div editable="rich">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="rating mt-3 text-success">
+                            <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="horizontal dark my-5">
+    </div>
+
+    <!-- FAQ -->
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div class="lc-block text-center mb-4">
+                    <div editable="rich">
+                        <h2 class="fw-bold">Frequently Asked Questions </h2>
+                    </div>
+                </div>
+                <div class="lc-block text-center">
+                    <div editable="rich">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>fugiat nulla
+                        pariatur excepteur sint occaecat.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img class="img-fluid h-100"
+                    src="https://images.unsplash.com/photo-1569437061238-3cf61084f487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
+                    alt="Photo by Tim Mossholder" style="object-fit:cover"
+                    srcset="https://images.unsplash.com/photo-1569437061238-3cf61084f487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080 1080w, https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w"
+                    sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="">
+            </div>
+            <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+                <div class="accordion accordion-flush" id="accordionFlushMyFAQ1">
+                    <div class="lc-block accordion-item mb-5">
+
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4 collapsed" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                        </a>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the first
+                                item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="lc-block accordion-item mb-5">
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Accordion Item #2
+                        </a>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the second
+                                item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="lc-block accordion-item mb-5">
+
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </a>
+
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the third
+                                item's accordion body. Nothing more exciting happening here in terms of content, but
+                                just filling up the space to make it look, at least at first glance, a bit more
+                                representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="lc-block accordion-item mb-5">
+
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Accordion Item #4</a>
+
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the first
+                                item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="lc-block accordion-item mb-5">
+
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Accordion Item #5</a>
+
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the second
+                                item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="lc-block accordion-item mb-5">
+
+                        <a editable="inline" class="fw-bold text-decoration-none text-dark h4" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                            aria-controls="flush-collapseSix">
+                            Accordion Item #6</a>
+
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushMyFAQ1">
+                            <div class="accordion-body" editable="rich">Placeholder content for this accordion, which is
+                                intended to demonstrate the <code>.accordion-flush</code> class. This is the third
+                                item's accordion body. Nothing more exciting happening here in terms of content, but
+                                just filling up the space to make it look, at least at first glance, a bit more
+                                representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="container-fluid bg-dark g-0">
+        <div class="row g-0 align-items-center">
+            <div class="col-lg-6 d-flex justify-content-center">
+                <div class="col-12 col-lg-8 p-4 text-white">
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h2 class="fw-bolder">Working Hours</h2>
+                        </div>
+                    </div>
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <p>Monday to Friday: 07:00 – 19:45
+                                Saturday to Sunday: 11:00 – 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h2 class="fw-bolder">Address</h2>
+                        </div>
+                    </div>
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <p>Street 3043 Clarence Court -&nbsp;Fayetteville&nbsp;NC <br>North Carolina 28306</p>
+                        </div>
+                    </div>
+
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h2 class="fw-bolder">Phone Numbers</h2>
+                        </div>
+                    </div>
+
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <p>Number 910-249-5283<br>Mobile Number 910-492-4232</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="lc-block">
+                    <div class="ratio ratio-16x9" lc-helper="gmap-embed">
+                        <iframe
+                            src="https://maps.google.com/maps?q=London%2C%20UK&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe>
+                    </div>
+                </div><!-- /lc-block -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
